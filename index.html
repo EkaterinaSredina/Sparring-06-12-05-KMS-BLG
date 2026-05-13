@@ -193,22 +193,22 @@ body{
 <header class="header">
   <div class="header-badge">Лазурит ДВРО · Спарринг офисов · 6–12 мая 2026</div>
   <h1>Спарринг офисов</h1>
-  <p class="subtitle">Результаты шести дней · 6–11 мая 2026 · Неделя 6–12 мая</p>
+  <p class="subtitle">Финальные результаты · 6–12 мая 2026 · 7 дней</p>
   <div class="header-divider"></div>
 </header>
 
 <div class="score-grid">
   <div class="score-card hbr">
     <div class="glow-orb"></div>
-    <div class="leader-badge">Лидер</div>
+    <div class="leader-badge">Победитель</div>
     <div class="team-label">Участник 1</div>
     <div class="team-name">РС Комсомольск</div>
-    <div class="pct-display" id="pct-hbr">78%</div>
+    <div class="pct-display" id="pct-hbr">102%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-hbr" style="width:0"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-hbr">1 790 186</div>
+        <div class="stat-value" id="fact-hbr">2 352 100</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -222,12 +222,12 @@ body{
     <div class="glow-orb"></div>
     <div class="team-label">Участник 2</div>
     <div class="team-name">РС Благовещенск</div>
-    <div class="pct-display" id="pct-vlv">47%</div>
+    <div class="pct-display" id="pct-vlv">54%</div>
     <div class="pct-caption">выполнения плана</div>
     <div class="progress-track"><div class="progress-fill" id="bar-vlv"></div></div>
     <div class="stat-row">
       <div class="stat-item">
-        <div class="stat-value" id="fact-vlv">706 512</div>
+        <div class="stat-value" id="fact-vlv">808 187</div>
         <div class="stat-label">Факт, руб.</div>
       </div>
       <div class="stat-item">
@@ -239,7 +239,7 @@ body{
 </div>
 
 <div class="motive-bar">
-  <div class="motive-text">Решающий <span class="accent">день!</span></div>
+  <div class="motive-text">РС Комсомольск — <span class="accent">ПОБЕДИТЕЛЬ СПАРРИНГА!</span> План выполнен. Браво!</div>
 </div>
 
 <script>
@@ -259,15 +259,15 @@ function animateCount(el,target,isPercent,duration){
 
 window.addEventListener('load',function(){
   setTimeout(function(){
-    animateCount(document.getElementById('pct-hbr'),78,true);
-    animateCount(document.getElementById('pct-vlv'),47,true);
-    animateCount(document.getElementById('fact-hbr'),1790186,false,1400);
-    animateCount(document.getElementById('fact-vlv'),706512,false,1400);
+    animateCount(document.getElementById('pct-hbr'),102,true);
+    animateCount(document.getElementById('pct-vlv'),54,true);
+    animateCount(document.getElementById('fact-hbr'),2352100,false,1400);
+    animateCount(document.getElementById('fact-vlv'),808187,false,1400);
   },300);
 
   setTimeout(function(){
-    document.getElementById('bar-hbr').style.width='77.8%';
-    document.getElementById('bar-vlv').style.width='47.1%';
+    document.getElementById('bar-hbr').style.width='100%';
+    document.getElementById('bar-vlv').style.width='53.9%';
   },400);
 
   Chart.defaults.font.family="'Inter',sans-serif";
